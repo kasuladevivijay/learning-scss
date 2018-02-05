@@ -1,0 +1,4 @@
+# ignore .sass-cache folder
+.sass-cache/
+# ignore .map files in the public folder
+*.map
