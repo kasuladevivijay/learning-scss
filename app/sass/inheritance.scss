@@ -1,0 +1,48 @@
+/*
+Inheritance comes in 2 forms
+1. Selector Inheritance
+2. Property Inheritance
+*/
+
+$el: button;
+
+/*/////////////////// Inheritated Selectors ///////////////////*/
+
+#parent{
+    background-color: aqua;
+
+    #child-one{
+        color: black;
+        background: yellow;
+    }
+
+    .children {
+        font-style: italic;
+        #inner-child{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+    &.hasClass{
+        background: blue;
+    }
+}
+
+/* /////////// Inheritated Properties ////////////*/ 
+
+//  Using the @extend keyword
+
+// Create a placeholder using the '%' symbol
+
+%shared{
+    background: greenyellow;
+    font-style: italic;
+}
+
+.content{
+    @extend %shared;
+    line-height: 2rem;
+}
+
+img, div, .block{
+    @extend %shared;
+}

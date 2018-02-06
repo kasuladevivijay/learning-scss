@@ -1,3 +1,34 @@
+/*
+Inheritance comes in 2 forms
+1. Selector Inheritance
+2. Property Inheritance
+*/
+/*/////////////////// Inheritated Selectors ///////////////////*/
+#parent {
+  background-color: aqua;
+}
+#parent #child-one {
+  color: black;
+  background: yellow;
+}
+#parent .children {
+  font-style: italic;
+}
+#parent .children #inner-child {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#parent.hasClass {
+  background: blue;
+}
 
+/* /////////// Inheritated Properties ////////////*/
+.content, img, div, .block {
+  background: greenyellow;
+  font-style: italic;
+}
+
+.content {
+  line-height: 2rem;
+}
 
 /*# sourceMappingURL=inheritance.css.map */
