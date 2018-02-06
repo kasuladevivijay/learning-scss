@@ -1,0 +1,65 @@
+/*
+    List data type has many functions
+    1. length($list: );
+    2. nth($list: , $n: );
+    3. set-nth($list:, $n: , $value:);
+    4. join($list1: , $list2: , $separator: );
+    5. append($list1: , $val: , $separator: );
+    6. list-separator($list: );
+    7. index($list: , $value: );
+    8. zip($lists: );
+*/
+
+$list1: 200px;
+$list2: 1px 2px 3px black,;
+$list3: Helvetica, Arial, sans-serif;
+
+$nestedList: 1px 0 2px blue, 2px 3px 4px yellowgreen;
+
+/* length: return the length of the list items */
+
+div{
+    border-radius: length($list3)px;
+}
+
+/* list-separator() : returns the separator */
+
+p{
+    background: list-separator($list2);
+    background-color: list-separator($list3);
+}
+
+/* nth() : return the nth value*/
+
+/* button{
+   border: nth($list: $list3, $n: 2); 
+   background: nth($list: $nestedList, $n: 2); 
+   background: nth($list: $list2, $n: 3);
+   /* set-nth() will set the value of the specified position of the list*//*
+   border-block-end: set-nth($list: $list2, $n:3 , $value:4px);
+} 
+*/
+
+div#main{
+    border: join($list1: $list2, $list2: $nestedList, $separator:comma );
+    // we can add string also
+    //font-family: join($list3 , opensans , comma );
+    /* Append function*/
+    font-family: append($list3, 'Times New Roman' , comma );
+}
+
+/* index() */
+video{
+    background: index($list: $list3, $value: Arial );
+}
+
+/* zip() will iterate through the lists provided*/
+
+audio{
+    background: zip(
+        1px 2px 3px,
+        3px 4px 5px,
+        2px 4px 2px,
+        blue black gold
+    )
+}

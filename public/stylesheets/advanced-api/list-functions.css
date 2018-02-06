@@ -1,0 +1,49 @@
+/*
+    List data type has many functions
+    1. length($list: );
+    2. nth($list: , $n: );
+    3. set-nth($list:, $n: , $value:);
+    4. join($list1: , $list2: , $separator: );
+    5. append($list1: , $val: , $separator: );
+    6. list-separator($list: );
+    7. index($list: , $value: );
+    8. zip($lists: );
+*/
+/* length: return the length of the list items */
+div {
+  border-radius: 3 px;
+}
+
+/* list-separator() : returns the separator */
+p {
+  background: comma;
+  background-color: comma;
+}
+
+/* nth() : return the nth value*/
+/* button{
+   border: nth($list: $list3, $n: 2); 
+   background: nth($list: $nestedList, $n: 2); 
+   background: nth($list: $list2, $n: 3);
+   /* set-nth() will set the value of the specified position of the list*/
+                                                                          /*
+   border-block-end: set-nth($list: $list2, $n:3 , $value:4px);
+} 
+*/
+div#main {
+  border: 1px 2px 3px black, 1px 0 2px blue, 2px 3px 4px yellowgreen;
+  /* Append function*/
+  font-family: Helvetica, Arial, sans-serif, "Times New Roman";
+}
+
+/* index() */
+video {
+  background: 2;
+}
+
+/* zip() will iterate through the lists provided*/
+audio {
+  background: 1px 3px 2px blue, 2px 4px 4px black, 3px 5px 2px gold;
+}
+
+/*# sourceMappingURL=list-functions.css.map */
