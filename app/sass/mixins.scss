@@ -1,0 +1,57 @@
+/* 
+  Mixins take a functional approach for generating the SASS content
+  They are parsed before the .scss compilation to .css format.
+  They take arguments aswell. and add more than one argument
+  They can be nested also.
+  Using ellipsis(...) to give multiple values.
+  Can include '@content' directive
+
+  create a mixin using '@mixin' directive and use it using the '@include' directive
+*/
+
+@mixin cssProps($color,$bgColor) {
+    #main {
+        color: $color;
+        background: $bgColor;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+@mixin boxShadow($shadow...){
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    -o-box-shadow: $shadow;
+    -ms-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+@mixin keyframes($name){
+    @-webkit-keyframes #{$name}{
+        @content;
+    }
+    @-moz-keyframes #{$name}{
+        @content;
+    }
+    @-o-keyframes #{$name}{
+        @content;
+    }
+    @keyframes #{$name}{
+        @content;
+    }
+}
+
+body {
+    color: #000;
+    background: #ffffff;
+    @include boxShadow(1px 2px 3px rgba(0,0,0,0.3), 0 1px 3px rgba(123,0,0,0.2));
+    @include cssProps(blue, #782323);
+}
+
+@include keyframes(myAnim){
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
