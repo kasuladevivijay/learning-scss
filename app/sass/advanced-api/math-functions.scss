@@ -1,0 +1,26 @@
+/*
+    sass has math operators and functions
+    Math Operators: +, - , *, /, %, ()
+    Math Functions:
+*/
+
+$a: 10px; $b: 34px; $c: 23px;
+
+// can create equations
+$equation: (4+$a)/3;
+
+div{
+    width: $a + $b - $c + 10px;
+    width: $a+(1px+$c);
+    height: $b % $c;
+    line-height: $equation;
+    width: round($number: $equation);
+    width: floor($number: $equation);
+    width: ceil($number: $equation - .4px);
+    width: random();
+    width: percentage($number: .1); 
+    width: min($a, $b, 3px);
+    width: max($a, $b, 3px);
+    width: abs($number: -34px)
+
+}
