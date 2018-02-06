@@ -11,5 +11,26 @@ Learning the basics of SASS/SCSS
 
 - All the text related content will be in .md files and the sass features will be in their respective folders.
 
-Using the below command to compile the files
-- sass --watch app/sass:public/stylesheets
+Topics Covered:
+
+Basics:
+
+- Variables
+- Mixins
+- Inheritance
+- Import and Partials
+- Nesting
+
+Advanced: 
+
+- If-directives
+- List-functions
+- Maps
+- Loops
+- Function-directives
+- Math Operators and Functions
+
+Thanks to:
+
+- https://sass-lang.com/guide
+- https://www.udemy.com/sass-workflow
