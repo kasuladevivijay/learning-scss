@@ -1,0 +1,36 @@
+/*
+    Maps is a data-type which has key-value pairs.
+    syntax: $map:(
+        "key":"value"
+    );
+    Maps can contain nested-maps.
+    Maps also has many functions.
+*/
+
+$map1:(
+    "key1": "value1",
+    "anotherKey": "blue"
+);
+
+$map2:( 'key1':'value1','key2':'value2', 'key3':'value3');
+
+$map3:(
+    'keyname': 'targeting a key produces it\'s value',
+    'string': string,
+    'number': 930,
+    'list4': (1px 2px 0 black),
+    'nestedMap': (
+        "nestedKey": "nestedValue",
+        "width": 300px
+    )
+);
+/* map functions */
+div{
+    content: map-keys($map: $map1);
+    content: map-values($map: $map2);
+    content: map-has-key($map: $map3, $key: number);
+    content: map-get($map: $map3, $key: list4);
+    // content: map-merge($map1, $map3); will throw an error
+    content: inspect(map-merge($map1, $map2)); // will return a string
+    content: inspect(map-remove($map3, list4))
+}
