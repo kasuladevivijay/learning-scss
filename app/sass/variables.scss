@@ -11,3 +11,51 @@ body{
     color: $primary-color;
     font: 100% $font-stack;
 }
+
+/*
+    variables can take integer, float and string values
+    Below are some of the examples
+*/
+// numeric types
+$width: 600px; $float: 1.5rem; $int: 10px;
+
+// string type [ can use singe-quotes, double-quotes, no quotes
+
+$stringOne: "../img/image1.jpg";
+$stringTwo: '../img/image2.jpg';
+$stringThree: no-repeat;
+
+// can store an element in the variable
+$stringFour: p;
+
+// Colors : can use names without '' and hex codes and rgba values
+$colorOne: white;
+$colorTwo: #747;
+$colorThree: rgb(255, 240, 23);
+$colorfour: rgba(234,124,21, 0.5);
+
+// list types: are multiple values separated with spaces or commas
+
+$list: 1px 2px 3px red;
+
+// map datatype
+$map: ("key1":"value1", "color":"blue" );
+
+// boolean datatype
+$bool: true;
+
+// null datatype
+$null: null;
+
+
+div ##{$stringFour}{
+    color: $colorThree;
+    width: $width;
+    font-size: $float;
+    border-radius: $int;
+    background: url($stringOne) $stringThree;
+    border-color: $colorfour;
+}
+
+
+

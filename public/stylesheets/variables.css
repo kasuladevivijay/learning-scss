@@ -5,6 +5,20 @@ This can be extremely powerful when working with brand colors and keeping them c
 */
 body {
   color: #333;
-  font: 100% Arial, Helvetica, sans-serif; }
+  font: 100% Arial, Helvetica, sans-serif;
+}
+
+/*
+    variables can take integer, float and string values
+    Below are some of the examples
+*/
+div #p {
+  color: #fff017;
+  width: 600px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background: url("../img/image1.jpg") no-repeat;
+  border-color: rgba(234, 124, 21, 0.5);
+}
 
 /*# sourceMappingURL=variables.css.map */
