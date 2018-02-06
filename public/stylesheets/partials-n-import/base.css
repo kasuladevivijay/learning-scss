@@ -1,3 +1,13 @@
-
+/**
+  sass @import is different from css import
+  sass import can actually import .scss, .css, .sass files 
+*/
+@import url(import.css);
+/* _filename.scss file is called partials which are not directly parsed/compiled in scss but are used
+in other scss files for using the styles*/
+p {
+  color: "yellow";
+  font-family: Arial, sans-serif;
+}
 
 /*# sourceMappingURL=base.css.map */

@@ -1,0 +1,12 @@
+/**
+  sass @import is different from css import
+  sass import can actually import .scss, .css, .sass files 
+*/
+
+@import 'import.css';
+@import '_reset.scss';
+
+p{
+    color: $color;
+    font-family: $font-stack;
+}
