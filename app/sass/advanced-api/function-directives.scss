@@ -1,0 +1,24 @@
+/* SASS gives the ability to define our own functions
+  using the @function directive */
+
+$headers: h1, h2, h3, h4, h5, h6;
+$fontValues: 48px, 40px, 32px, 24px, 16px, 8px;
+
+@function list-width($listOne, $listTwo) {
+
+  $l1: length($listOne);
+  $l2: length($listTwo);
+
+  @if $l1 != $l2 {
+    @return nth($fontValues, 1);
+  }
+  @else{
+    @return nth($fontValues, 6);
+  }
+}
+
+//  Using functions
+
+html{
+  width: list-width($headers, $fontValues);
+}

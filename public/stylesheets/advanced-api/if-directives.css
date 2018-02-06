@@ -1,0 +1,12 @@
+/*
+  if directives - @if , @else if , @else
+  It check the conditions and produce the output.
+  Equations can be used in the condition statements aswell
+  Comparison operators (==, !==, >, <, >=, <=) can be used to check the conditions
+*/
+html {
+  content: 'its nothing else';
+  width: 15px;
+}
+
+/*# sourceMappingURL=if-directives.css.map */
